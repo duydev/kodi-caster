@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Kodi Caster - Cài đặt</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cài đặt Kodi Caster</h1>
+    <form id="kodiForm">
+      <div class="field">
+        <label for="host">Host (IP hoặc domain)</label>
+        <input type="text" id="host" required placeholder="192.168.x.x">
+      </div>
+      <div class="field">
+        <label for="port">Port</label>
+        <input type="number" id="port" min="1" max="65535" value="8080" placeholder="8080">
+      </div>
+      <div class="field">
+        <label for="username">Username (tùy chọn)</label>
+        <input type="text" id="username" placeholder="kodi">
+      </div>
+      <div class="field">
+        <label for="password">Password (tùy chọn)</label>
+        <input type="password" id="password" placeholder="••••••••">
+      </div>
+      <div class="actions">
+        <button type="button" id="testBtn">Test connection</button>
+        <button type="submit">Lưu</button>
+      </div>
+    </form>
+    <p class="help">Kodi cần bật Web Server: Settings → Services → Control → Allow remote control via HTTP</p>
+    <div id="testResult"></div>
+  </div>
+  <footer class="page-footer">© 2026 Trần Nhật Duy · MIT License</footer>
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>Kodi Caster</h1>
+    <a href="#" id="settingsLink">Cài đặt</a>
+  </header>
+  <main>
+    <div id="loading">Đang tải...</div>
+    <div id="noConfig" class="hidden">Cần cấu hình Kodi. <a href="#" id="noConfigLink">Cài đặt</a></div>
+    <div id="empty" class="hidden">Chưa có stream. Mở trang có video HLS trước.</div>
+    <div id="listToolbar" class="hidden">
+      <button type="button" id="clearAllBtn">Xóa tất cả</button>
+    </div>
+    <ul id="streamList"></ul>
+  </main>
+  <footer>
+    <span class="copyright">© 2026 Trần Nhật Duy · MIT License</span>
+  </footer>
+  <div id="toast" class="hidden"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

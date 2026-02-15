@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Kodi Caster",
+    "version": "1.0.0",
+    "description": "Cast HLS streams (m3u8) to Kodi",
+    "author": "Trần Nhật Duy <duytn.hcm@gmail.com>",
+    "permissions": [
+        "webRequest",
+        "storage",
+        "tabs"
+    ],
+    "host_permissions": [
+        "<all_urls>",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "background": {
+        "service_worker": "background/service-worker.js"
+    },
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "assets/icons/icon16.png",
+            "48": "assets/icons/icon48.png",
+            "128": "assets/icons/icon128.png"
+        },
+        "default_title": "Kodi-Caster"
+    },
+    "options_page": "options/options.html"
+}
